@@ -20,7 +20,7 @@ class Menu {
 
     public:
         Menu(float width, float height, const vector<string>& options) {
-            if (!font.loadFromFile("../arial.ttf")) {
+            if (!font.loadFromFile("./arial.ttf")) {
                 cerr << "Failed to load font!\n";
             }
 
@@ -82,7 +82,7 @@ int main() {
 
     // BST
     sf::Font font;
-    if (!font.loadFromFile("../arial.ttf")) {
+    if (!font.loadFromFile("./arial.ttf")) {
         return -1; // Error loading font
     }
 
